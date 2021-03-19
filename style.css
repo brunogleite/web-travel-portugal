@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --font-text: #565360;
+    --font-label: #908e9b;
+    --font-disabled: #e1dfe9;
+    --small-one: 4px;
+    --small-two: 8px;
+    --small-three: 12px;
+    --medium-one: 16px;
+    --medium-two: 20px;
+    --medium-three: 24px;
+    --large-one: 32px;
+    --large-two: 48px;
+    --large-three: 64px;
+}
+
+.main-section{
+    position: absolute;
+    min-height: 80vh;
+    margin:  ;
+}
+
+.main-content{
+    position: absolute;
+    top: 0;
+    
+}
