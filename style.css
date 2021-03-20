@@ -29,17 +29,19 @@
 }
 
 body{
-    display: grid;
+    position: relative;
+    background-image:url(Lisbon.jpg);
+    
 }
 
 .main-content{
+    transform: translateY(15%);
     background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(Lisbon.jpg);
-    height: 70vh;
-    width: 70%;
+    height: 80vh;
+    width: 90%;
     margin: 0 auto; 
     border: 2px solid rgb(221, 216, 216);
     border-radius: 15px;
-    
 }
 
 .nav-bar{
@@ -58,9 +60,18 @@ body{
     display: flex;
     justify-content: space-between;
     padding: var(--large-two);
-    min-height: 40vh;
+    max-height: 40vh;
+    
 }
 
+.left{
+    width: 50%;
+    
+}
+.right{
+    width: 50%;
+
+}
 .left-heading{
     font-size: var(--large-two);
     color: rgb(243, 243, 243);
@@ -78,7 +89,7 @@ body{
     align-items: center;
     min-height: 20vh;
     width: 80%;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .left-squares{
@@ -116,3 +127,4 @@ body{
     border-radius: 20px;
     border: 2px solid rgb(243, 243, 243);
 }
+
