@@ -6,6 +6,7 @@
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(porto_river.jpg);
+    background-repeat: no-repeat;
     color: #fff;
 }
 nav{
@@ -42,4 +43,20 @@ nav{
     cursor: pointer;
     fill: red;
     transition: 0.5s ease-in-out;
+}
+
+
+
+.clouds{
+    animation-name: clouding;
+
+}
+
+@keyframes clouding{
+    from{
+        transform: translateX(0) ;
+    }
+    to{
+        
+    }
 }
