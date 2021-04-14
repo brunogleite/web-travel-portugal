@@ -1,5 +1,5 @@
-const alg = document.querySelector(".algarve2");
+const translate = document.querySelector(".translate");
 
-alg.addEventListener("click", () =>{
-    location.href= "http://127.0.0.1:5501/algarve/algarve-preview.html"
+translate.addEventListener("scroll", (e) =>{
+    console.log(e)
 })
