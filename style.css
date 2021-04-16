@@ -4,25 +4,23 @@
     box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
-}
 
 .lisbon-main{
-   
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .lisbon{
     position: absolute;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -2;
-}
+} 
 
 .left{
     position: absolute;
@@ -57,8 +55,132 @@ body{
     font-family: "Overpass", sans-serif;
 }
 
+* .second{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
 .second{
-    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(./porto_river.jpg);
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
+
+.second.active{
+    background-image: url(/algarve.jpg);
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+}
+
+
+.content-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .left-hero, .right-hero{
+        width: 50%;
+
+    }
+
+    .right-hero svg{
+        width: 800px;
+    }
+
+    .left-hero .heading-left-hero{
+        font-size: 4rem;
+    }
+
+    .left-hero .p-left-hero{
+        font-size: 1.2rem;
+    }
+
+    svg{
+        fill: transparent;
+        stroke: white;
+    }
+
+    svg #PT-01:hover{
+        fill: rgba(0, 0, 0, 0.45)
+    }
+
+    .details{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.4) ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    .details.show{
+        transition: 0.5s;
+        visibility: visible;
+    }
+
+    .three-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        padding: 40px;
+    }
+
+    .region-name.show{
+        opacity: 1;
+    }
+
+    .region-name{
+       visibility: hidden;
+    }
+
+    .region-number .show{
+        opacity: 1;
+    }
+
+    .region-number {
+        visibility: hidden;
+    }
+
+    .three-details span{
+        font-weight: bold;
+    }
+
+    .region, .distance, .duration{
+        text-align: center;
+        
+    }
+
+    .region{
+        position: absolute;
+    }
+
+    .btn{
+        border: 1px solid white;
+        border-radius: 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .btn:hover{
+        transform: scale(1.1);
+        transition: .3s;
+
+    }
+
+
+    svg #PT-08{
+
+    }
